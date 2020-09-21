@@ -226,7 +226,7 @@ variable "links" {
 variable "user" {
   type        = string
   description = "The user to run as inside the container. Can be any of these formats: user, user:group, uid, uid:gid, user:gid, uid:group. The default (null) will use the container's configured `USER` directive or root if not set."
-  default     = null
+  default     = 0
 }
 
 variable "container_depends_on" {
